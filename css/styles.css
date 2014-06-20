@@ -72,12 +72,13 @@ a: hover {
     display: inline-block;
 }
 img {
-    width: ;
-    height: ;
+    width: 700px;
+    height: 318px;
 }
 .hover-content {
     position: absolute;
-   
+   width: 700px;
+   height: 318px;
     display: block;
     top: 0;
     left: 0;
