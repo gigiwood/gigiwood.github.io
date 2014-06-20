@@ -65,11 +65,18 @@ a:visited {
 a: hover {
   text-decoration: underline;
 }
+
+
 .hover-image {
     border: 1px solid green;
     position: relative;
-    
+    width: 700px;
+    height: 318px;
     display: inline-block;
+}
+img {
+  width: 700px;
+  height: 318px;
 }
 
 .hover-content {
