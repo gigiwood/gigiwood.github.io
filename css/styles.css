@@ -28,6 +28,7 @@ p.intro:first-line {
 .credits {
   font-style: italic;
   text-align: right;
+  font-size: 50%;
 }
 a {
   text-decoration: none;
