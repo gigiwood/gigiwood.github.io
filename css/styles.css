@@ -1,6 +1,24 @@
 body {
-font-family: arial;
-background-color: rgb(185,179,175);}
+  width: 100%
+  margin: 0 auto;
+  
+  font-family: arial;
+  background-color: rgb(185,179,175);}
+#content {overflow: auto;}
+#nav, #feature, #footer {
+  margin: 1%;}
+.column1, column3{
+  width: 20%;
+  float: center;
+  margin: 1%;
+}
+.column2 {
+  width: 60%;
+  float: center;
+}
+}
+
+
 h1, h2, h3, a  {
   font-weight: normal;
   color: rgb(0,0,0);
