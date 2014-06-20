@@ -27,7 +27,7 @@ p.intro:first-line {
 }
 .credits {
   font-style: italic;
-  text-align: right;
+  text-align: left;
   font-size: 80%;
 }
 a {
