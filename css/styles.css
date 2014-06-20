@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   
   font-family: arial;
-  background-color: rgb(185,179,175);}
+  background-color: rgb(185,179,175);
 #content {overflow: auto;}
 #nav, #feature, #footer {
   margin: 1%;}
