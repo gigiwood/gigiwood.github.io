@@ -21,3 +21,17 @@ h2 {
 h3 {
   font-family: Georgia, Times, sans-serif;
 }
+
+p.intro:first-line {
+  font-weight: bold;
+}
+.credits {
+  font-style: italic;
+  text-align: right;
+}
+a {
+  text-decoration: none;
+}
+a: hover {
+  text-decoration: underline;
+}
