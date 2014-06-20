@@ -42,7 +42,9 @@ h2 {
 h3 {
   font-family: Georgia, Times, sans-serif;
 }
-
+h4 {
+  font-weight: bold;
+}
 p.intro:first-letter {
   font-size: 200%;
 }
