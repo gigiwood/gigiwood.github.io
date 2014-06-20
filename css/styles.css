@@ -44,8 +44,8 @@ h3 {
   font-family: Georgia, Times, sans-serif;
 }
 
-p.intro:first-line {
-  font-weight: bold;
+p.intro:first-letter {
+  font-size: 200%;
 }
 .credits {
   font-style: italic;
