@@ -54,6 +54,9 @@ p.intro:first-letter {
 a {
   text-decoration: none;
 }
+a:link {
+  color: #0A2BBA;
+}
 a:visited {
   color: black;
 }
