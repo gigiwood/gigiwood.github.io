@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>World Cup Teams</title>
+	<style>
+		.title {
+			font-size: 100px;
+			font-family: sans-serif;
+			font-style:italic;
+			padding-left: 200px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			background-repeat:no-repeat;
+			background-position: left 10%;
+			border-bottom: 1px solid #f00;
+			
+
+		}
+		.teamName {
+
+			
+			cursor: default;
+		}
+
+		.teamCollapsed {
+
+			background-size: 6%;
+			background-position: left center;
+
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="teams"> </div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$(document).on("click",".teamName", function(){
+			$(this).next().toggle()
+			var a = $(this).next().is(":visible");
+			console.log(a);
+			if (a) {
+				$(this).parent().removeClasss("teamCollapsed");
+
+			}
+			else $(this).parent().toggle("slow");
+
+		})
+
+
+
+
+
+		var loadPlayers = function(tag,teamId) {
+			$.get("http://worldcup.kimonolabs.com/api/players?apikey=9fbd4588ac75f992cc8fc95fd5d991aa" + "&teamId=" + teamId, function(data) {
+				console.log(data);
+				for (i=0; i<data.length; i++){
+					var img = $("<img>");
+					img.attr("src",data[i].image);
+					$(tag).append(img);
+
+				}
+
+			});
+
+		};
+
+		var fillPlayers = function(teamsFromInternet) { 
+			var teams = $("#teams");
+			for (i=0; i<teamsFromInternet.length;i++){
+				var divContainer=$("<div>").addClass("title teamCollapsed").css("background-image","url(" + teamsFromInternet[i].logo+")")
+				var divText=$("<div>").text(teamsFromInternet[i].name).addClass("teamName")
+				var divImages=$("<div>")
+				divImages.hide()
+				
+				divContainer
+				.append(divText)
+				.append(divImages);
+				teams.append(divContainer);
+
+
+
+				loadPlayers(divImages, teamsFromInternet[i].id) 
+				
+			}
+
+		}
+		$.get("http://worldcup.kimonolabs.com/api/teams?apikey=9fbd4588ac75f992cc8fc95fd5d991aa",function(data){
+			for (i=0; i<data.length;i++){
+				console.log(data[i].name);
+
+			}
+			fillPlayers(data);
+
+		})
+
+
+
+	</script>
+</body>
+</html>
