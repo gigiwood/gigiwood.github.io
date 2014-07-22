@@ -12,14 +12,13 @@ www.linkedin.com/pub/gigi-wood/3/a07/622/
 Writer, Editor, Web Developer
 -----------------------------
 
-More than 15 years writing, editing and proofreading experience. Award-winning, passionate journalist and web developer with sound judgment who produces superior content for a variety of mediums, including newspapers, magazines, books and web. Strong leadership and managerial expertise, including team building, ability to establish priorities and meet goals. See more of my work at (www.gigiwood.com).
+More than 15 years writing, editing and proofreading experience. Award-winning, passionate journalist and web developer with sound judgment who produces superior content for a variety of mediums, including newspapers, magazines, books and web. Strong leadership and managerial expertise, including team building, ability to establish priorities and meet goals. See more of my work at www.gigiwood.com.
 
 Work Experience
 ---------------
 *DevIowa Bootcamp*
 University of Iowa - Iowa City, Iowa
 June 2014 to Present
-Responsibilities 
 Participating in highly-selective, nine-week training program to learn full-stack web development. Hands-on training in HTML, CSS, JavaScript, Node.js, APIs, databases, servers, Agile development, version control and open source. Actively involved in team projects. Awarded scholarship. Program will be completed Aug. 2, 2014.
 
 *Editor*
