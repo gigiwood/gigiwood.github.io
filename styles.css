@@ -100,12 +100,11 @@ body {
       width: 700px;
       background-color: rgba(0, 0, 0, 0.3)
     }
-    .container {
-      width: 85%;
-    }
-    .ul {
+
+  
+  ul {
       padding: 10px;
     }
-    .li {
+  li {
     display: block;
   }
