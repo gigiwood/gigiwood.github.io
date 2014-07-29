@@ -16,9 +16,9 @@ More than 15 years writing, editing and proofreading experience. Award-winning, 
 
 Work Experience
 ---------------
-**DevIowa Bootcamp**\s\s
-University of Iowa - Iowa City, Iowa\s\s
-June 2014 to Present\s\s
+**DevIowa Bootcamp**
+University of Iowa - Iowa City, Iowa
+June 2014 to Present
 Participating in highly-selective, nine-week training program to learn full-stack web development. Hands-on training in HTML, CSS, JavaScript, Node.js, APIs, databases, servers, Agile development, version control and open source. Actively involved in team projects. Awarded scholarship. Program will be completed Aug. 2, 2014.
 
 *Editor*
