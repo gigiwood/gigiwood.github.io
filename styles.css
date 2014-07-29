@@ -106,3 +106,6 @@ body {
     .ul {
       padding: 10px;
     }
+    .li {
+    display: block;
+  }
