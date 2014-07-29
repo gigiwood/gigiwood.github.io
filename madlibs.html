@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+<script src="/assets/jquery.js"></script>
+<style>
+</style>
+</head>
+
+<body>
+<div class="prompt"></div>
+<button>Next</button>
+<script>
+// List of prompts for the user
+var prompts = [
+	'Type your name',
+	'Type an adjective',
+	'Type a noun'
+   ];
+   
+   //here's an array to keep answers in
+   var answers = [];
+
+// Keep track of current prompt we're on
+var currentPrompt = 0;
+
+// A function that will call the next prompt
+var nextPrompt = function() {
+	// if there is a next prompt
+	if (currentPrompt != 0) {
+	  answers.push($('input').val());
+	}
+	if (currentPrompt < prompts.length) {
+	  
+	  //put prompt and form into html
+	 $('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		// put first prompt in all html elements with class 
+		$('.prompt').html(prompts[currentPrompt]);
+		// move the next prompt into variable currentPrompt 
+		currentPrompt = currentPrompt + 1;
+	}
+	//or else if we're at the end of the array
+	else {
+		// put a new message into the html.
+		$('.prompt').html("that's all for now!");
+		alert(answers);
+	}
+}
+
+// run nextPrompt function when button is clicked
+$('button').click(function() {
+	nextPrompt();
+});
+
+// Show the first prompt as soon as js loads
+nextPrompt();
+</script>
+
+</body>
+</html>
