@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 
 <head>
-<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-<title>JavaScript Mad Libs</title>
- <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-<style>
-body {
-  text-align: center;
-  font-family: 'Fjalla One';
-  font-size: 20px;
-  background: #e6eaf0;
-}
-button {
-  margin: 40px;
-}
-input {
-  font-size: 24px;
-}
-.fill {
- background: white;
- color: red;
- border-bottom: 2px black solid;
- font-family: 'Shadows Into Light';
- padding: 0 6px;
- margin: 4px;
-}
+	<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<title>JavaScript Mad Libs</title>
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<style>
+		body {
+			text-align: center;
+			font-family: 'Fjalla One';
+			font-size: 20px;
+			background: #e6eaf0;
+		}
+		button {
+			margin: 40px;
+		}
+		input {
+			font-size: 24px;
+		}
+		.fill {
+			background: white;
+			color: red;
+			border-bottom: 2px black solid;
+			font-family: 'Shadows Into Light';
+			padding: 0 6px;
+			margin: 4px;
+		}
 
-</style>
+	</style>
 </head>
 
 <body>
-<div class="prompt"></div>
-<button>Next</button>
-<script>
+	<div class="prompt"></div>
+	<button>Next</button>
+	<script>
 // List of prompts for the user
 var prompts = [
-	'Type your name',
-	'Type an adjective',
-	'Type a noun'
-   ];
+'Type your name',
+'Type an adjective',
+'Type a noun'
+];
 
 var answers=[];
 // Keep track of current prompt we're on
@@ -49,7 +49,7 @@ var currentPrompt = 0;
 var nextPrompt = function() {
   //if there's no answer in the form
   if (currentPrompt != 0){
-    answers.push($('input').val());
+  	answers.push($('input').val());
   }
 	// if there is a next prompt
 	if (currentPrompt < prompts.length) {
@@ -67,7 +67,7 @@ var nextPrompt = function() {
 
 //puts user answers into HTML
 var showFinal = function() {
-  $('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>.');
+	$('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>.');
   //hide button
   $('button').hide();
 }
